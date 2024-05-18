@@ -29,8 +29,10 @@ void selection_sort(int arr[], int size)
         int temp;
         int min_idx = i;
         int flag = 1;
+        
         for (int j = i + 1; j < size; j++)
         {
+            // if sorting is required in decrementing order then flip the < to >
             if (arr[j] < arr[min_idx])
             {
                 min_idx = j; // we keep track of new index where lowest value is.
